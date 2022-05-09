@@ -237,6 +237,9 @@ position: relative;
       .table1{
           margin-top: 6.3rem;
       }
+      #rock,#paper,#scissors{
+          margin: 0 6px;
+      }
       
   }
 
