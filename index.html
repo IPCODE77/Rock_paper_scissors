@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Rock,paper,scissors</title>
+</head>
+<body>
+    <div class="mainbox">
+        <img src="img.gif" alt="" id="image">
+        <div class="containerbox">
+            <div class="textbox1">
+            <p id="heading1">Welcome to</p>
+            <br>
+            <p id="gamename">Rock,Paper,scissors Game.</p>
+        </div>
+        <i class="fa-solid fa-4x fa-arrow-down" id="arrowicon"></i>
+        <a href="#gamepage">
+            <button id="start">Start game</button>
+        </a>
+    </div>
+</div>
+<section id="gamepage">
+    <div class="gamename">
+        <p id="title">rock paper scissors</p>
+    </div>
+    <div class="table1">
+        <div class="player">
+            <h2>PlayerWin</h2>
+            <p id="playerwin">0</p>
+        </div>
+        <div class="computer">
+            <h2>computerWin</h2>
+            <p id="computerwin">0</p>
+
+        </div>
+    </div>
+    
+    <div class="gamebtn">
+        <div class="new">
+
+            <button id="rock">rock</button>
+            <button id="paper">paper</button>
+            <button id="scissors">scissors</button>
+        </div>
+        
+
+      
+        <div class="winner">
+            <p id="moves"></p>
+            <p id="winmsg"></p>
+            <button id="restart" hidden>Restart</button>
+        </div>
+    </div>
+    <div class="helpicon">
+        <i class="fa-solid fa-circle-question" id="help" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+        
+    </div>
+
+</section>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div  class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          <i class="fa-solid  fa-xmark btn-close"  id="close" data-bs-dismiss="modal" aria-label="Close"></i>
+        </div>
+        <div class="modal-body">
+            <div class="helpcontainer">
+                <div class="helpimage">
+                    <img src="help.png" id="imgjpg" alt="">
+                </div>
+                <div class="textbox">
+                    <p>
+
+                       <h2>Why is Rock Paper Scissors played?</h2>
+                        This game is played by children and adults and is popular all over the world. Apart from being a game played to pass time, the game is usually played in situations where something has to be chosen. It is similar in that way to other games like flipping the coin, throwing dice or drawing straws. There is no room for cheating or for knowing what the other person is going to do so the results are usually very satisfying with no room for fighting or error.
+
+
+                       <p>
+                            <h2>
+
+                                What are the rules of RPS?
+                            </h2>
+                           Although the game has a lot of complexity to it, the rules to play it are pretty simple.
+                           The game is played where players deliver hand signals that will represent the elements of the game; rock, paper and scissors. The outcome of the game is determined by 3 simple rules:  <br>
+                           
+                         <strong>1.</strong>Rock wins against scissors. <br>
+                           <strong>2.</strong>Scissors win against paper. <br>
+                         <strong>3.</strong>Paper wins against rock. <br>
+                        </p>
+                        </p>
+                    </div>
+            </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+    
+</body>
+<script src="https://kit.fontawesome.com/8749e3864a.js" crossorigin="anonymous"></script>
+
+<script src="index.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</html>
